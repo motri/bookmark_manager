@@ -7,7 +7,7 @@ require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
 require_relative '../data_mapper_setup'
-require_relative '../models/link'
+# require_relative '../models/link'
 require_relative '../app'
 
 Capybara.app = BookmarkManager
