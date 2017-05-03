@@ -4,7 +4,7 @@ feature 'Creates new links' do
     visit '/links/new'
     fill_in :title, with: 'Google'
     fill_in :url, with: 'google.com'
-    click_on 'Add Bookmark'
+    click_on 'Create link'
     within 'ul#links' do
       expect(page).to have_content('Google')
     end
