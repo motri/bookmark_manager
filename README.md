@@ -1,4 +1,8 @@
 [![Build Status] https://travis-ci.org/motri/bookmark_manager.svg?branch=master]
+Bookmark Manager Web App.
+
+It fullfils the following user stories:
+
 As a user,
 So that I can find the link I'm looking for,
 I want to be able to see a list of links.
