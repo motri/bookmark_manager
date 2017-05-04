@@ -17,10 +17,6 @@
         null
       ],
       "/Users/unaimotrikogomez/Projects/bookmark_manager/spec/tags_spec.rb": [
-        null,
-        1,
-        1,
-        1,
         1,
         1,
         1,
@@ -42,8 +38,20 @@
         null,
         null,
         1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
         1,
         null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
         1,
         1,
         1,
@@ -70,6 +78,6 @@
         null
       ]
     },
-    "timestamp": 1493926558
+    "timestamp": 1493931478
   }
 }

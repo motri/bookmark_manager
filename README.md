@@ -1,15 +1,4 @@
-User stories
-
-the format could be:
-
-As a... [who is the user?]
-I need/want/expect to...[what does the user want to do?]
-So that... [why does the user want to do this?]
-
-write the user stories for the following
-
--User stories/features for showing a list of links
-
+[![Build Status] https://travis-ci.org/motri/bookmark_manager.svg?branch=master]
 As a user,
 So that I can find the link I'm looking for,
 I want to be able to see a list of links.
