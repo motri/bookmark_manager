@@ -1,0 +1,8 @@
+require 'data_mapper'
+require './app.rb'
+
+
+desc "it updates existing database"
+task :auto_upgrade do
+  DataMapper.auto_upgrade!
+end

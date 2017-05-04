@@ -1,4 +1,5 @@
-[![Build Status] https://travis-ci.org/motri/bookmark_manager.svg?branch=master]
+![Build Status] https://travis-ci.org/motri/bookmark_manager.svg?branch=master
+
 Bookmark Manager Web App.
 
 It fullfils the following user stories:
