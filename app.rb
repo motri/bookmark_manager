@@ -2,7 +2,7 @@ ENV['RACK_ENV'] ||= 'development'
 
 require 'sinatra/base'
 require_relative 'data_mapper_setup'
-
+# it manages the bookmark_manager web app
 class BookmarkManager < Sinatra::Base
   get '/' do
     redirect '/links'
@@ -23,5 +23,11 @@ class BookmarkManager < Sinatra::Base
     link.tag << tag
     link.save
     redirect '/links'
+  end
+
+  get '/tags/:name' do
+    tag = Tag.first(name: params[:name])
+    @links = tag ? tag.links : []
+    erb :'links/index'
   end
 end

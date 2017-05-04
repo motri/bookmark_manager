@@ -1,5 +1,4 @@
-
-
+# it understands link with properties
 class Link
   include DataMapper::Resource
 
