@@ -16,6 +16,17 @@
         null,
         null
       ],
+      "/Users/unaimotrikogomez/Projects/bookmark_manager/spec/feature_test_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null
+      ],
       "/Users/unaimotrikogomez/Projects/bookmark_manager/spec/tags_spec.rb": [
         1,
         1,
@@ -78,6 +89,6 @@
         null
       ]
     },
-    "timestamp": 1493933875
+    "timestamp": 1493934552
   }
 }
