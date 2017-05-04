@@ -12,10 +12,8 @@ group :development, :test do
   gem 'simplecov', require: false
   gem 'simplecov-console', require: false
 end
-gem 'sinatra'
-
-gem 'shotgun'
-
 gem 'database_cleaner', '~> 1.5', '>= 1.5.3'
 gem 'rack'
 gem 'rubocop', '~> 0.48.1'
+gem 'shotgun'
+gem 'sinatra'
