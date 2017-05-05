@@ -8,13 +8,17 @@ class BookmarkManager < Sinatra::Base
   set :session_secret, 'secret'
 
   get '/' do
-    erb :'links/home'
+    erb :'links/login'
+  end
+
+  get '/join' do
+    erb :'links/sign_up'
   end
 
   post '/home' do
     user = User.create(user: params[:user], password: params[:password])
     session[:user_id] = user.id
-    erb :'links/welcome'
+    erb :'links/home'
   end
 
   get '/links' do

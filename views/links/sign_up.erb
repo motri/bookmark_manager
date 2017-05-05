@@ -14,33 +14,32 @@ body {
     background-size: contain;
 }
 
-#sign_in {
+#home_form {
   font-size: 25px;
 }
 
 </style>
 
 <body>
-  <div class="container-fluid text-center" id= "sign_in">
+  <div class="container-fluid text-center">
 
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <title>Bookmark Manager</title>
-      </head>
+<h1>BookmarkManager allows you to store your links in an intuitive way!</h1>
+<h2>Log in</h2>
+<form action="/home" method="post" id="home_form" >
+    <label for="user">
+      email:
+    <input type="text" name="user">
+  </label>
+  <label for="password">
+      password:
+  <input type="text" name="password">
+</label>
+<label for="password">
+    confirm password:
+<input type="text" name="password_confirmation">
+</label>
+    <input type="submit" value="Submit">
+</form>
 
-      <body>
-        <% if current_user %>
-          Welcome, <%= current_user.user %>!
-        <% end %>
-      </body>
-    </html>
-
-<a href="/links/new">
-<button type="button" class="btn btn-primary">Add links</button>
-</a>
-<a href="/links">
-<button type="button" class="btn btn-primary">Go to links</button>
-</a>
 </div>
 </body>

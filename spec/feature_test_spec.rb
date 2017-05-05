@@ -3,11 +3,8 @@ require 'spec_helper'
 feature 'it signs into users link profile' do
   scenario 'we sign in and takes us to link list' do
     log_in
-    p User.first
-    p User.first.hash_password
-
     expect(page).to have_content('Bookmark Manager Welcome,
-     unaimotriko@electromail.org Add links Go to links')
+     unaimotriko@electromail.org! Add links Go to links')
   end
 end
 

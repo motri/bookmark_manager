@@ -20,3 +20,12 @@ def log_in
   fill_in :password, with: 'doughnut'
   click_on 'Log in'
 end
+
+def sign_up_wrong_password
+  visit '/'
+  click_link "Sign up"
+  fill_in :user, with: 'unaimotriko@electromail.org'
+  fill_in :password, with: 'doughnut'
+  fill_in :password_confirmation, with: 'pretzel'
+  click_on 'Submit'
+end
