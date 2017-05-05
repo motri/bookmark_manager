@@ -4,13 +4,16 @@ require 'sinatra/base'
 require_relative 'data_mapper_setup'
 # it manages the bookmark_manager web app
 class BookmarkManager < Sinatra::Base
+  enable :sessions
+  set :session_secret, 'secret'
+
   get '/' do
     erb :'links/home'
   end
 
   post '/home' do
     user = User.create(user: params[:user], password: params[:password])
-    user.save
+    session[:user_id] = user.id
     erb :'links/welcome'
   end
 
