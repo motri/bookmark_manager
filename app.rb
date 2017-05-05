@@ -9,7 +9,7 @@ class BookmarkManager < Sinatra::Base
   end
 
   post '/home' do
-    erb :'links/wellcome'
+    erb :'links/welcome'
   end
 
   get '/links' do
