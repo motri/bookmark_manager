@@ -9,6 +9,8 @@ class BookmarkManager < Sinatra::Base
   end
 
   post '/home' do
+    user = User.create(user: params[:user], password: params[:password])
+    user.save
     erb :'links/welcome'
   end
 

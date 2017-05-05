@@ -18,13 +18,18 @@
       ],
       "/Users/unaimotriko/projects/weekly_challenges/bookmark_manager/spec/feature_test_spec.rb": [
         1,
+        null,
+        null,
         1,
         1,
         1,
         1,
+        null,
+        null,
+        null,
         1,
-        0,
-        0,
+        1,
+        4,
         null,
         null
       ],
@@ -90,6 +95,6 @@
         null
       ]
     },
-    "timestamp": 1493973460
+    "timestamp": 1493984505
   }
 }
