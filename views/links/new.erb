@@ -8,9 +8,10 @@
   </head>
 
   <body>
+    <div>
     <% if current_user %>
       Welcome, <%= current_user.user %>
-    <% end %>
+    <% end %></div>
     <form action='/links' method='POST'>
       <label for='title'>
         Title:

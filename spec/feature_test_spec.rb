@@ -6,7 +6,8 @@ feature 'it signs into users link profile' do
     p User.first
     p User.first.hash_password
 
-    expect(page).to have_content('Welcome unaimotriko@electromail.org!')
+    expect(page).to have_content('Bookmark Manager Welcome,
+     unaimotriko@electromail.org Add links Go to links')
   end
 end
 
