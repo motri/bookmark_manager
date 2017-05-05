@@ -8,7 +8,6 @@
     <% if current_user %>
       Welcome, <%= current_user.user %>
     <% end %>
-    <%= yield %>
       <% @links.each do |link| %>
         <li>
           Title: <%= link.title %>

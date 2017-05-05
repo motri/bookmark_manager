@@ -9,9 +9,8 @@
 
   <body>
     <% if current_user %>
-      Welcome, <%= current_user.email %>
+      Welcome, <%= current_user.user %>
     <% end %>
-    <%= yield %>  
     <form action='/links' method='POST'>
       <label for='title'>
         Title:

@@ -19,19 +19,20 @@ body {
 }
 
 </style>
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Bookmark Manager</title>
-  </head>
+
 <body>
   <div class="container-fluid text-center" id= "sign_in">
 
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Bookmark Manager</title>
+      </head>
+
       <body>
         <% if current_user %>
-          Welcome, <%= current_user.email %>
+          Welcome, <%= current_user.user %>
         <% end %>
-        <%= yield %>  <!-- this then yields to the view which has been called by your controller -->
       </body>
     </html>
 
