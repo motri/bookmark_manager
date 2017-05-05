@@ -4,8 +4,12 @@ require 'sinatra/base'
 require_relative 'data_mapper_setup'
 # it manages the bookmark_manager web app
 class BookmarkManager < Sinatra::Base
-  get '/' do
-    redirect '/links'
+  get '/home' do
+    erb :'links/home'
+  end
+
+  post '/home/:user' do
+    erb :'links/wellcome'
   end
 
   get '/links' do

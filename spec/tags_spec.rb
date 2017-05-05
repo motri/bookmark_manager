@@ -19,8 +19,8 @@ feature 'it filters links by tag' do
                 tag: [Tag.first_or_create(name: 'bubbles')])
   end
   scenario 'we only see links with bubble tag' do
-    # expect(page.status_code).to eq(200)
     visit '/tags/bubbles'
+    expect(page.status_code).to eq(200)
     within 'ul#links' do
       expect(page).not_to have_content('Makers Academy')
       expect(page).not_to have_content('Code.org')
