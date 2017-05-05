@@ -13,3 +13,10 @@ def fills_in_google
   fill_in :tag, with: 'search engine; overlords; snoops'
   click_on 'Create link'
 end
+
+def log_in
+  visit '/'
+  fill_in :user, with: 'unaimotriko@electromail.org'
+  fill_in :password, with: 'doughnut'
+  click_on 'Log in'
+end
