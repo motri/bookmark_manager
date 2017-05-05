@@ -19,11 +19,21 @@ body {
 }
 
 </style>
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bookmark Manager</title>
+  </head>
 <body>
   <div class="container-fluid text-center" id= "sign_in">
 
-<h1>Welcome <%= User.first.user %>!</h1>
+      <body>
+        <% if current_user %>
+          Welcome, <%= current_user.email %>
+        <% end %>
+        <%= yield %>  <!-- this then yields to the view which has been called by your controller -->
+      </body>
+    </html>
 
 <a href="/links/new">
 <button type="button" class="btn btn-primary">Add links</button>

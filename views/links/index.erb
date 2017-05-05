@@ -1,11 +1,20 @@
-<h1> Links </h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bookmark Manager</title>
+  </head>
 
-<ul id='links'>
-  <% @links.each do |link| %>
-    <li>
-      Title: <%= link.title %>
-      URL:   <%= link.url   %>
-      <!-- Tag:  <%= link.tag %> -->
-    </li>
-  <% end %>
-</ul>
+  <body>
+    <% if current_user %>
+      Welcome, <%= current_user.user %>
+    <% end %>
+    <%= yield %>
+      <% @links.each do |link| %>
+        <li>
+          Title: <%= link.title %>
+          URL:   <%= link.url   %>
+        </li>
+      <% end %>
+    </ul>
+  </body>
+</html>
