@@ -1,4 +1,4 @@
-
+# it understands tags for links
 class Tag
   include DataMapper::Resource
 

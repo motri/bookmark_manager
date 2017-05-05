@@ -1,14 +1,8 @@
-User stories
+![Build Status](https://travis-ci.org/motri/bookmark_manager.svg?branch=master)
 
-the format could be:
+Bookmark Manager Web App.
 
-As a... [who is the user?]
-I need/want/expect to...[what does the user want to do?]
-So that... [why does the user want to do this?]
-
-write the user stories for the following
-
--User stories/features for showing a list of links
+It fullfils the following user stories:
 
 As a user,
 So that I can find the link I'm looking for,

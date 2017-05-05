@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/unaimotriko/projects/weekly_challenges/bookmark_manager/spec/creating_links_spec.rb": [
+      "/Users/unaimotrikogomez/Projects/bookmark_manager/spec/creating_links_spec.rb": [
         null,
         1,
         1,
@@ -16,21 +16,38 @@
         null,
         null
       ],
-      "/Users/unaimotriko/projects/weekly_challenges/bookmark_manager/spec/tags_spec.rb": [
-        null,
+      "/Users/unaimotrikogomez/Projects/bookmark_manager/spec/feature_test_spec.rb": [
         1,
         1,
         1,
         1,
-        1,
-        1,
-        1,
-        1,
-        1,
+        0,
+        0,
+        0,
         null,
         null
       ],
-      "/Users/unaimotriko/projects/weekly_challenges/bookmark_manager/spec/viewing_links_spec.rb": [
+      "/Users/unaimotrikogomez/Projects/bookmark_manager/spec/tags_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
         1,
         null,
         1,
@@ -39,6 +56,31 @@
         1,
         1,
         1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/unaimotrikogomez/Projects/bookmark_manager/spec/viewing_links_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
         1,
         1,
         null,
@@ -47,6 +89,6 @@
         null
       ]
     },
-    "timestamp": 1493830008
+    "timestamp": 1493934552
   }
 }
