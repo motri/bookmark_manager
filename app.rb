@@ -26,8 +26,8 @@ class BookmarkManager < Sinatra::Base
     user = User.create(user: params[:user],
                        password: params[:password],
                        password_confirmation: params[:password_confirmation])
-  session[:user_id] = user.id
-  redirect '/home'
+    session[:user_id] = user.id
+    redirect '/home'
   end
 
   get '/home' do

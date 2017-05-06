@@ -30,6 +30,7 @@ def sign_up
   fill_in :password_confirmation, with: 'doughnut'
   click_on 'Submit'
 end
+
 def sign_up_wrong_password
   visit '/'
   click_link 'Sign up'
