@@ -2,6 +2,7 @@ ENV['RACK_ENV'] ||= 'development'
 
 require 'sinatra/base'
 require_relative 'data_mapper_setup'
+require 'sinatra/flash'
 # it manages the bookmark_manager web app
 class BookmarkManager < Sinatra::Base
   enable :sessions
@@ -11,13 +12,25 @@ class BookmarkManager < Sinatra::Base
     erb :'links/login'
   end
 
+  post '/logged' do
+    user = User.create(user: params[:user],
+                       password: params[:password])
+    session[:user_id] = user.id
+    redirect '/home'
+  end
+
   get '/join' do
     erb :'links/sign_up'
   end
+  post '/users' do
+    user = User.create(user: params[:user],
+                       password: params[:password],
+                       password_confirmation: params[:password_confirmation])
+  session[:user_id] = user.id
+  redirect '/home'
+  end
 
-  post '/home' do
-    user = User.create(user: params[:user], password: params[:password])
-    session[:user_id] = user.id
+  get '/home' do
     erb :'links/home'
   end
 
